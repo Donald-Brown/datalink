@@ -10,6 +10,8 @@
     color: #0e76a8 !important;
 }
 
-#main-footer .white {
-    color: #fff !important;
+#main-footer a[href^="tel"] {
+    color: inherit; /* Inherit text color of parent element. */
+    text-decoration: none; /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
 }
