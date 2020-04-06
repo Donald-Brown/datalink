@@ -35,7 +35,8 @@
             href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
             rel="stylesheet"
         />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/main.min.css" />
         <title>Data Link</title>
@@ -323,9 +324,46 @@
         </section>
 
         <!-- Testimonials Section-->
-        <section id="testimonials" class="text-center bg-primary">
-            
-              
+        <section id="testimonials" class="p-2 bg-primary text-white">
+            <div class="container">
+                <h2 class="text-center">Testimonials</h2>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="slider">
+                            <div>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, velit.
+                                    </p>
+                                    <footer class="blockquote-footer">John Doe From
+                                        <cite title="Company 1">Company 1</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, velit.
+                                    </p>
+                                    <footer class="blockquote-footer">Mary Jane From
+                                        <cite title="Company 2">Company 2</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, velit.
+                                    </p>
+                                    <footer class="blockquote-footer">Steve Ross From
+                                        <cite title="Company 3">Company 3</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- Careers Section -->
@@ -427,9 +465,9 @@
                         <p>
                         <i class="fas fa-envelope mr-1"></i> Info@datalink.net</p>
                         <p class="text-white">
-                        <i class="fas fa-phone mr-1"></i> &lpar;502&rpar;&hyphen;206&hyphen;3310</p>
+                        <i class="fas fa-phone mr-1"></i> <span class="white">&lpar;502&rpar;&hyphen;206&hyphen;3310</span></p>
                         <p class="text-white">
-                        <i class="fas fa-print mr-1"></i> &lpar;502&rpar;&hyphen;206&hyphen;3311</p>
+                        <i class="fas fa-print mr-1"></i> <span class="white">&lpar;502&rpar;&hyphen;206&hyphen;3311</span></p>
                     </div>
                     <div class="col-md-3 text-center py-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Ohio</h6>
@@ -477,6 +515,7 @@
             integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
         <script>
             // Get the current year for the copyright
@@ -507,6 +546,13 @@
                         }
                     );
                 }
+            });
+
+            //Slick slider script
+            $('.slider').slick({
+                infinite: true,
+                slideToShow: 1,
+                slideToScroll: 1
             });
         </script>
     </body>
