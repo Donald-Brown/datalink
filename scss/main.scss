@@ -1,0 +1,38 @@
+@import "mynavbar";
+@import "showcase";
+@import "about";
+@import "solutions";
+@import "careers";
+@import "footer";
+
+html {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    #showcase {
+        min-height: 80vh;
+
+        .primary-overlay {
+            min-height: 80vh;
+        }
+
+        .primary-overlay {
+            background-image: linear-gradient(
+                290deg,
+                rgba(0, 0, 0, 0.5) 55%,
+                rgba(0, 0, 0, 0.5) 45%
+            );
+        }
+    }
+
+    .img-nav {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .showcase-title {
+        margin-top: 8rem;
+    }
+}
