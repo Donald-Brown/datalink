@@ -44,7 +44,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 90vh;
+    min-height: 54rem;
     position: relative;
 
     .primary-overlay {
@@ -52,7 +52,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 90vh;
+        min-height: 54rem;
         background-image: linear-gradient(290deg, rgba(0, 0, 0, 0.5) 55%, rgba(0, 0, 0, 0.2) 45%);
     }
 }
