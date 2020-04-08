@@ -1,8 +1,13 @@
 .navbar {
     border-bottom: #3eb049 3px solid;
     opacity: 0.95;
+    padding: 0px;
 
     .nav-link {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .img-nav {
+        height: 2.5rem;
     }
 }
